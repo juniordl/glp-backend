@@ -8,7 +8,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GLP.Identity.Api", "Identit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GLP.Identity.Domain", "Identity\GLP.Identity.Domain\GLP.Identity.Domain.csproj", "{E0CC0EE2-439C-46D3-AEC2-0EB5B4093D09}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GLP.Idendity.Infrastructure", "Identity\GLP.Idendity.Infrastructure\GLP.Idendity.Infrastructure.csproj", "{AE931514-D71F-42CE-A270-4D43C4742DB6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GLP.Identity.Infrastructure", "Identity\GLP.Identity.Infrastructure\GLP.Identity.Infrastructure.csproj", "{AE931514-D71F-42CE-A270-4D43C4742DB6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GLP.Identity.Application", "Identity\GLP.Identity.Application\GLP.Identity.Application.csproj", "{52E2F1DE-29E2-4B23-B679-3E17C5AFA910}"
 EndProject

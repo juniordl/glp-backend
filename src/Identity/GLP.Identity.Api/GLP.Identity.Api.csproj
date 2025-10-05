@@ -11,4 +11,10 @@
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2"/>
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\GLP.Identity.Application\GLP.Identity.Application.csproj" />
+      <ProjectReference Include="..\GLP.Identity.Domain\GLP.Identity.Domain.csproj" />
+      <ProjectReference Include="..\GLP.Identity.Infrastructure\GLP.Identity.Infrastructure.csproj" />
+    </ItemGroup>
+
 </Project>
