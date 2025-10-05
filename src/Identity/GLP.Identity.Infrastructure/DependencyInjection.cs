@@ -1,9 +1,11 @@
+using System.Text;
 using GLP.Identity.Domain;
-using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.IdentityModel.Tokens;
 
 namespace GLP.Identity.Infrastructure;
 
@@ -27,23 +29,32 @@ public static class DependencyInjection
             .AddSignInManager()
             .AddDefaultTokenProviders();
 
-        // Cookies (puedes cambiar a JWT después)
+        var key = Encoding.UTF8.GetBytes(cfg["Jwt:Key"]!);
+
         services.AddAuthentication(options =>
             {
-                options.DefaultAuthenticateScheme = IdentityConstants.ApplicationScheme;
-                options.DefaultSignInScheme = IdentityConstants.ApplicationScheme;
-                options.DefaultChallengeScheme = IdentityConstants.ApplicationScheme;
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
             })
-            .AddCookie(IdentityConstants.ApplicationScheme, opt =>
+            .AddJwtBearer(opt =>
             {
-                opt.Cookie.Name = "__Host.GLP";
-                opt.Cookie.HttpOnly = true;
-                opt.Cookie.SecurePolicy = CookieSecurePolicy.Always;
-                opt.Cookie.SameSite = SameSiteMode.Lax; // None si cruzas dominios
-                opt.SlidingExpiration = true;
-                opt.ExpireTimeSpan = TimeSpan.FromHours(8);
+                opt.TokenValidationParameters = new()
+                {
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidateLifetime = true,
+                    ValidateIssuerSigningKey = true,
+                    ValidIssuer = cfg["Jwt:Issuer"],
+                    ValidAudience = cfg["Jwt:Audience"],
+                    IssuerSigningKey = new SymmetricSecurityKey(key),
+                    ClockSkew = TimeSpan.FromMinutes(1)
+                };
             });
+        services.AddAuthorization();
 
+        // Token service
+        services.AddScoped<ITokenService, TokenService>();
+        
         return services;
     }
 }
