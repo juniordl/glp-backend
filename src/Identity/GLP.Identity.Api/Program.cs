@@ -1,5 +1,6 @@
 using GLP.Identity.Api;
 using GLP.Identity.Infrastructure;
+using GLP.Identity.Infrastructure.Context;
 
 var builder = WebApplication.CreateBuilder(args);
 

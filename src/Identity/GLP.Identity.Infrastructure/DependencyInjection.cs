@@ -1,5 +1,7 @@
 using System.Text;
 using GLP.Identity.Domain;
+using GLP.Identity.Infrastructure.Context;
+using GLP.Identity.Infrastructure.Token;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
