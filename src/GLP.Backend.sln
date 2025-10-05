@@ -2,6 +2,16 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GLP.Backend.Host.Api", "GLP.Backend.Host.Api\GLP.Backend.Host.Api.csproj", "{71B6D35B-E5D4-4900-8B51-938A6F5F83A1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Indentity", "Indentity", "{0E9B3EBC-0349-46CC-B1D1-0340323E1242}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GLP.Identity.Api", "Identity\GLP.Identity.Api\GLP.Identity.Api.csproj", "{8E12809B-FECA-4BD0-900F-16BE3A12E705}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GLP.Identity.Domain", "Identity\GLP.Identity.Domain\GLP.Identity.Domain.csproj", "{E0CC0EE2-439C-46D3-AEC2-0EB5B4093D09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GLP.Idendity.Infrastructure", "Identity\GLP.Idendity.Infrastructure\GLP.Idendity.Infrastructure.csproj", "{AE931514-D71F-42CE-A270-4D43C4742DB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GLP.Identity.Application", "Identity\GLP.Identity.Application\GLP.Identity.Application.csproj", "{52E2F1DE-29E2-4B23-B679-3E17C5AFA910}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +22,27 @@ Global
 		{71B6D35B-E5D4-4900-8B51-938A6F5F83A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71B6D35B-E5D4-4900-8B51-938A6F5F83A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71B6D35B-E5D4-4900-8B51-938A6F5F83A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E12809B-FECA-4BD0-900F-16BE3A12E705}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E12809B-FECA-4BD0-900F-16BE3A12E705}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E12809B-FECA-4BD0-900F-16BE3A12E705}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E12809B-FECA-4BD0-900F-16BE3A12E705}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0CC0EE2-439C-46D3-AEC2-0EB5B4093D09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0CC0EE2-439C-46D3-AEC2-0EB5B4093D09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0CC0EE2-439C-46D3-AEC2-0EB5B4093D09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0CC0EE2-439C-46D3-AEC2-0EB5B4093D09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE931514-D71F-42CE-A270-4D43C4742DB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE931514-D71F-42CE-A270-4D43C4742DB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE931514-D71F-42CE-A270-4D43C4742DB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE931514-D71F-42CE-A270-4D43C4742DB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52E2F1DE-29E2-4B23-B679-3E17C5AFA910}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52E2F1DE-29E2-4B23-B679-3E17C5AFA910}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52E2F1DE-29E2-4B23-B679-3E17C5AFA910}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52E2F1DE-29E2-4B23-B679-3E17C5AFA910}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8E12809B-FECA-4BD0-900F-16BE3A12E705} = {0E9B3EBC-0349-46CC-B1D1-0340323E1242}
+		{E0CC0EE2-439C-46D3-AEC2-0EB5B4093D09} = {0E9B3EBC-0349-46CC-B1D1-0340323E1242}
+		{AE931514-D71F-42CE-A270-4D43C4742DB6} = {0E9B3EBC-0349-46CC-B1D1-0340323E1242}
+		{52E2F1DE-29E2-4B23-B679-3E17C5AFA910} = {0E9B3EBC-0349-46CC-B1D1-0340323E1242}
 	EndGlobalSection
 EndGlobal
