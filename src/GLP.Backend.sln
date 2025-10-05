@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GLP.Backend.Host.Api", "GLP.Backend.Host.Api\GLP.Backend.Host.Api.csproj", "{71B6D35B-E5D4-4900-8B51-938A6F5F83A1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GLP.Host.Api", "GLP.Host.Api\GLP.Host.Api.csproj", "{71B6D35B-E5D4-4900-8B51-938A6F5F83A1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Indentity", "Indentity", "{0E9B3EBC-0349-46CC-B1D1-0340323E1242}"
 EndProject

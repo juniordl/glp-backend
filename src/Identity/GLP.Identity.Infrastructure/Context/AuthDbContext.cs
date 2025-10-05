@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace GLP.Identity.Infrastructure;
+namespace GLP.Identity.Infrastructure.Context;
 
 public sealed class AuthDbContext :
     IdentityDbContext<ApplicationUser, ApplicationRole, Guid,

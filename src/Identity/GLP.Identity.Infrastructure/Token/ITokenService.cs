@@ -1,6 +1,6 @@
 using GLP.Identity.Domain;
 
-namespace GLP.Identity.Infrastructure;
+namespace GLP.Identity.Infrastructure.Token;
 
 public interface ITokenService
 {

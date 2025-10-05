@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 
-namespace GLP.Identity.Infrastructure;
+namespace GLP.Identity.Infrastructure.Token;
 
 public sealed class TokenService : ITokenService
 {

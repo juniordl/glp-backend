@@ -2,7 +2,7 @@ using GLP.Identity.Domain;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace GLP.Identity.Infrastructure;
+namespace GLP.Identity.Infrastructure.Context;
 
 public static class Seed
 {

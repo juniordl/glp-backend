@@ -1,7 +1,7 @@
 using System.Security.Claims;
 using GLP.Identity.Application;
 using GLP.Identity.Domain;
-using GLP.Identity.Infrastructure;
+using GLP.Identity.Infrastructure.Token;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
