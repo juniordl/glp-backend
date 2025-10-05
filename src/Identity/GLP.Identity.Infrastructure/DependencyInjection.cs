@@ -16,7 +16,9 @@ public static class DependencyInjection
     public static IServiceCollection AddIdentityInfrastructure(this IServiceCollection services, IConfiguration cfg)
     {
         // EF Core InMemory para prototipo/tests
-        services.AddDbContext<AuthDbContext>(opt => opt.UseInMemoryDatabase("AuthDb"));
+        //services.AddDbContext<AuthDbContext>(opt => opt.UseInMemoryDatabase("AuthDb"));
+
+        services.AddDbContext<AuthDbContext>(opt => opt.UseSqlServer(cfg.GetConnectionString("DefaultConnection")));
 
         services.AddIdentityCore<ApplicationUser>(opt =>
             {
