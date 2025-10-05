@@ -12,6 +12,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GLP.Identity.Infrastructure
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GLP.Identity.Application", "Identity\GLP.Identity.Application\GLP.Identity.Application.csproj", "{52E2F1DE-29E2-4B23-B679-3E17C5AFA910}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DocumentaryProcess", "DocumentaryProcess", "{9F3499DB-091C-4A32-AEC1-7EE8A00B46CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GLP.DocumentaryProcess.Api", "DocumentaryProcess\GLP.DocumentaryProcess.Api\GLP.DocumentaryProcess.Api.csproj", "{4A550EDE-8F6D-4804-93BC-76E99E7CEA38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GLP.DocumentaryProcess.Domain", "DocumentaryProcess\GLP.DocumentaryProcess.Domain\GLP.DocumentaryProcess.Domain.csproj", "{44356781-D12D-4CB3-BECB-BB3402FEC527}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GLP.DocumentaryProcess.Application", "DocumentaryProcess\GLP.DocumentaryProcess.Application\GLP.DocumentaryProcess.Application.csproj", "{F324E6E1-D122-41F6-9AFD-CEF1BFD6A440}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GLP.DocumentaryProcess.Infrastructure", "DocumentaryProcess\GLP.DocumentaryProcess.Infrastructure\GLP.DocumentaryProcess.Infrastructure.csproj", "{EFD421D1-5749-481D-981B-2EB7DF25AA5E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,11 +48,31 @@ Global
 		{52E2F1DE-29E2-4B23-B679-3E17C5AFA910}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52E2F1DE-29E2-4B23-B679-3E17C5AFA910}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52E2F1DE-29E2-4B23-B679-3E17C5AFA910}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A550EDE-8F6D-4804-93BC-76E99E7CEA38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A550EDE-8F6D-4804-93BC-76E99E7CEA38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A550EDE-8F6D-4804-93BC-76E99E7CEA38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A550EDE-8F6D-4804-93BC-76E99E7CEA38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44356781-D12D-4CB3-BECB-BB3402FEC527}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44356781-D12D-4CB3-BECB-BB3402FEC527}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44356781-D12D-4CB3-BECB-BB3402FEC527}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44356781-D12D-4CB3-BECB-BB3402FEC527}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F324E6E1-D122-41F6-9AFD-CEF1BFD6A440}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F324E6E1-D122-41F6-9AFD-CEF1BFD6A440}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F324E6E1-D122-41F6-9AFD-CEF1BFD6A440}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F324E6E1-D122-41F6-9AFD-CEF1BFD6A440}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFD421D1-5749-481D-981B-2EB7DF25AA5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFD421D1-5749-481D-981B-2EB7DF25AA5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFD421D1-5749-481D-981B-2EB7DF25AA5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFD421D1-5749-481D-981B-2EB7DF25AA5E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{8E12809B-FECA-4BD0-900F-16BE3A12E705} = {0E9B3EBC-0349-46CC-B1D1-0340323E1242}
 		{E0CC0EE2-439C-46D3-AEC2-0EB5B4093D09} = {0E9B3EBC-0349-46CC-B1D1-0340323E1242}
 		{AE931514-D71F-42CE-A270-4D43C4742DB6} = {0E9B3EBC-0349-46CC-B1D1-0340323E1242}
 		{52E2F1DE-29E2-4B23-B679-3E17C5AFA910} = {0E9B3EBC-0349-46CC-B1D1-0340323E1242}
+		{4A550EDE-8F6D-4804-93BC-76E99E7CEA38} = {9F3499DB-091C-4A32-AEC1-7EE8A00B46CE}
+		{44356781-D12D-4CB3-BECB-BB3402FEC527} = {9F3499DB-091C-4A32-AEC1-7EE8A00B46CE}
+		{F324E6E1-D122-41F6-9AFD-CEF1BFD6A440} = {9F3499DB-091C-4A32-AEC1-7EE8A00B46CE}
+		{EFD421D1-5749-481D-981B-2EB7DF25AA5E} = {9F3499DB-091C-4A32-AEC1-7EE8A00B46CE}
 	EndGlobalSection
 EndGlobal
