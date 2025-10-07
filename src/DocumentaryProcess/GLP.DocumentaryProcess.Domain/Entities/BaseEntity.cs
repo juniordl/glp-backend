@@ -1,4 +1,4 @@
-﻿namespace GLP.DocumentaryProcess.Domain;
+﻿namespace GLP.DocumentaryProcess.Domain.Entities;
 
 public abstract class BaseEntity
 {
