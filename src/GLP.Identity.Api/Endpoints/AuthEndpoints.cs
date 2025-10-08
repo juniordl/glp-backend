@@ -2,16 +2,21 @@ using System.Security.Claims;
 using GLP.Identity.Application;
 using GLP.Identity.Domain;
 using GLP.Identity.Infrastructure.Token;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Routing;
+using Microsoft.Extensions.Configuration;
 
-namespace GLP.Identity.Api;
+namespace GLP.Identity.Api.Endpoints;
 
 public static class AuthEndpoints
 {
     public static IEndpointRouteBuilder MapIdentityEndpoints(this IEndpointRouteBuilder app)
     {
-        var g = app.MapGroup("/auth");
+        var g = app.MapGroup("/auth")
+            .WithTags("Identity");
 
         g.MapPost("/register", async ([FromBody] RegisterRequest req, UserManager<ApplicationUser> um) =>
         {
@@ -20,7 +25,7 @@ public static class AuthEndpoints
             return result.Succeeded ? Results.Ok() : Results.BadRequest(result.Errors);
         });
         
-        g.MapPost("/token", async (
+        g.MapPost("/login", async (
             [FromBody] LoginRequest req,
             SignInManager<ApplicationUser> sm,
             UserManager<ApplicationUser> um,

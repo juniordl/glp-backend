@@ -1,4 +1,4 @@
-namespace GLP.DocumentaryProcess.Api;
+namespace GLP.DocumentaryProcess.Api.Models;
 
 public class CreateMemberRequest
 {

@@ -50,7 +50,6 @@ public class DocumentaryProcessDbContext : DbContext
             .WithMany(l => l.MemberLodges)
             .HasForeignKey(ml => ml.LodgeId);
         
-        
         modelBuilder.ApplyConventionsForSchema("doc");
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(DocumentaryProcessDbContext).Assembly);
     }
